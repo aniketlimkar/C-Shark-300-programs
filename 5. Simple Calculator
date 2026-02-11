@@ -1,0 +1,25 @@
+using System;
+
+class Calculator
+{
+    static void Main()
+    {
+        Console.Write("Enter first number: ");
+        double a = double.Parse(Console.ReadLine());
+
+        Console.Write("Enter operator (+ - * /): ");
+        char op = char.Parse(Console.ReadLine());
+
+        Console.Write("Enter second number: ");
+        double b = double.Parse(Console.ReadLine());
+
+        switch (op)
+        {
+            case '+': Console.WriteLine(a + b); break;
+            case '-': Console.WriteLine(a - b); break;
+            case '*': Console.WriteLine(a * b); break;
+            case '/': Console.WriteLine(b != 0 ? a / b : "Cannot divide by zero"); break;
+            default: Console.WriteLine("Invalid operator"); break;
+        }
+    }
+}
