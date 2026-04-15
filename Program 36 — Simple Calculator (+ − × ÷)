@@ -1,0 +1,10 @@
+using System;
+class Program {
+    static void Main() {
+        int a = 10, b = 5;
+        Console.WriteLine("Add = " + (a + b));
+        Console.WriteLine("Sub = " + (a - b));
+        Console.WriteLine("Mul = " + (a * b));
+        Console.WriteLine("Div = " + (a / b));
+    }
+}
